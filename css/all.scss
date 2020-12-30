@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;700&display=swap');
+:root {
+  --primary-red: #c8102e;
+  --primary-blue: #003087;
+  --primary-blue-500: #012466;
+  --primary-white: #fff;
+  --primary-white-500: #fefefe;
+  --color-muted: #ccc;
+  --text-primary: #444;
+}
+body {
+  font-family: 'Mukta', sans-serif;
+  font-size: 18px;
+  background-color: #f7f7f7;
+}
+a {
+  color: var(--primary-blue);
+  transition: 200ms color ease-in-out;
+  &:hover {
+    text-decoration: underline;
+    color: var(--primary-blue-500);
+  }
+}
+#wrapper {
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+@import './components/fonts';
+@import './components/common';
+@import './components/header';
+@import './components/news-section';
+
+@import './components/contact';
+@import './components/footer';

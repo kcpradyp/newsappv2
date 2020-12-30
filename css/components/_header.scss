@@ -1,0 +1,42 @@
+.header-holder {
+  text-align: center;
+  padding: 1rem 0;
+}
+.datetime {
+  font-weight: 500;
+  padding-top: 0.5rem;
+  .date,
+  .time {
+    padding: 0 5px;
+    font-size: 0.9rem;
+    line-height: 1;
+  }
+}
+.navbar-default {
+  background-color: var(--primary-blue);
+  .nav-link {
+    color: var(--primary-white);
+    transition: background-color 200ms ease-in-out;
+    &:hover {
+      background-color: var(--primary-blue-500);
+    }
+  }
+  .active {
+    .nav-link {
+      background-color: var(--primary-blue-500);
+    }
+  }
+}
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  overflow-y: hidden;
+
+  .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+}
